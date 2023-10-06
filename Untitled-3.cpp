@@ -25,7 +25,7 @@ int main(){
     cin>>N;
 	int int_array[N];
 	float float_array[N];
-	cout<<"Entner integer array elements:"<<endl;
+	cout<<"Enter integer array elements:"<<endl;
 	for (int i = 0; i < N; i++)
 	{
 		cin>>int_array[i];
