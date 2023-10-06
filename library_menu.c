@@ -11,7 +11,7 @@ void albuk();
 
 struct library
 {
-	int an;/*Accession number*/
+	int an;
 	char title[50];
 	char author[30];
 	int price;
