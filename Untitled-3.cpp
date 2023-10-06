@@ -30,7 +30,7 @@ int main(){
 	{
 		cin>>int_array[i];
 	}
-	cout<<"Entner floating array elements:"<<endl;
+	cout<<"Enter floating array elements:"<<endl;
 	for (int i = 0; i < N; i++)
 	{
 		cin>>float_array[i];
