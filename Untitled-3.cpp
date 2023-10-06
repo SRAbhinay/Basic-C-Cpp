@@ -21,7 +21,7 @@ void sort(T arr[], int SIZE){
 
 int main(){
     int N;
-    cout<<"enter the number of numbers: "<<endl;
+    cout<<"enter number of numbers: "<<endl;
     cin>>N;
 	int int_array[N];
 	float float_array[N];
