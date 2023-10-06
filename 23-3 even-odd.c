@@ -4,12 +4,10 @@
 void nature(int n);        
  
 int main()
-{
-      int n;
+{      int n;
       scanf("%d", &n);
       nature(n);
-      return 0;
-}
+      return 0; }
  
 void nature(int n)   
 {
