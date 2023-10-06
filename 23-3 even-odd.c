@@ -10,9 +10,7 @@ int main()
       return 0; }
  
 void nature(int n)   
-{
-    if(n%2==0)
+{     if(n%2==0)
         printf("even number");
     else
-        printf("odd number");
-}
+        printf("odd number"); }
