@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <math.h>
+
+// Function to perform addition
+double add(double a, double b) {
+    return a + b;
+}
+
+// Function to perform subtraction
+double subtract(double a, double b) {
+    return a - b;
+}
+
+// Function to perform multiplication
+double multiply(double a, double b) {
+    return a * b;
+}
+
+// Function to perform division
+double divide(double a, double b) {
+    if (b == 0) {
+        printf("Error: Division by zero is not allowed.\n");
+        return 0;
+    }
+    return a / b;
+}
+
+// Function to calculate square root
+double squareRoot(double a) {
+    if (a < 0) {
+        printf("Error: Square root of a negative number is not allowed.\n");
+        return 0;
+    }
+    return sqrt(a);
+}
+
+// Function to calculate power
+double power(double base, double exponent) {
+    return pow(base, exponent);
+}
+
+int main() {
+    char operator;
+    double num1, num2, result;
+
+    while (1) {
+        printf("Enter an operator (+, -, *, /, sqrt, ^) or 'q' to quit: ");
+        scanf(" %c", &operator);
+
+        if (operator == 'q') {
+            break;
+        }
+
+        if (operator == '+' || operator == '-' || operator == '*' || operator == '/' || operator == '^') {
+            printf("Enter two operands: ");
+            scanf("%lf %lf", &num1, &num2);
+
+            switch (operator) {
+                case '+':
+                    result = add(num1, num2);
+                    break;
+                case '-':
+                    result = subtract(num1, num2);
+                    break;
+                case '*':
+                    result = multiply(num1, num2);
+                    break;
+                case '/':
+                    result = divide(num1, num2);
+                    break;
+                case '^':
+                    result = power(num1, num2);
+                    break;
+            }
+            printf("Result: %lf\n", result);
+        } else if (operator == 'sqrt') {
+            printf("Enter a number: ");
+            scanf("%lf", &num1);
+            result = squareRoot(num1);
+            printf("Result: %lf\n", result);
+        } else {
+            printf("Invalid operator. Please try again.\n");
+        }
+    }
+
+    return 0;
+}
